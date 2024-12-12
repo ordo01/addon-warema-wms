@@ -5,7 +5,7 @@
   "description": "Control your Warema WMS system",
   "arch": ["aarch64", "amd64", "armv7", "i386"],
   "startup": "services",
-  "url": "https://github.com/giannello/addon-warema-bridge",
+  "url": "https://github.com/ordo01/addon-warema-bridge",
   "boot": "auto",
   "hassio_api": true,
   "image": "giannello/addon-warema-bridge",
@@ -18,7 +18,8 @@
     "wms_channel": "int?",
     "wms_serial_port": "device(subsystem=tty)",
     "ignored_devices": "str?",
-    "force_devices": "str?"
+    "force_devices": "str?",
+    "log_level":"str?",
   },
   "services": [
     "mqtt:need"
